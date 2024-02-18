@@ -1,0 +1,810 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "poppins", sans-serif;
+}
+
+.up {
+  position: sticky;
+  bottom: 2.5%;
+  left: 95%;
+  background-color: crimson;
+  color: #fff;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 10%;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* ================================ nav bar style==================*/
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 30px;
+  font-family: "Ubuntu", sans-serif;
+  transition: all o.3s ease;
+  z-index: 10000;
+}
+
+.navbar {
+  position: fixed;
+  padding: 15px 0;
+  background: #222222dd;
+}
+
+.navbar .logo {
+  position: relative;
+  font-size: 30px;
+  float: left;
+  width: 40%;
+  padding-left: 20px;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar .max-width .menu .nav-item li {
+  position: relative;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-top: 10px;
+  transition: 0.6s;
+}
+
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.navbar .logo a {
+  color: #fff;
+}
+
+.navbar .logo a span {
+  color: crimson;
+}
+
+.navbar .logo a:hover {
+  color: crimson;
+}
+
+.navbar .logo a span:hover {
+  color: #fff;
+}
+
+.navbar .nav-item li a {
+  color: #fff;
+}
+
+.navbar .nav-item li a:hover {
+  color: crimson;
+}
+
+/* ========================================== home style ======================================================= */
+
+.home {
+  display: flex;
+  background: url("../img/jon-pic-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+  transition: 0.6s;
+}
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+.home .home-content{
+  padding-top: 150px;
+}
+
+.home .home-content .text-1 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.home .home-content .text-2 {
+  color: #fff;
+  font-size: 80px;
+  padding-left: -4px;
+  font-weight: 600;
+}
+
+.home .home-content .text-3 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 300;
+  padding-left: -2px;
+  margin: 3px;
+}
+
+.home .home-content .text-3 span {
+  color: crimson;
+  font-size: 46px;
+}
+
+.home .home-content a {
+  color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 2px solid crimson;
+  padding: 15px 36px;
+  background-color: crimson;
+  font-size: 25px;
+}
+
+.home .home-content a:hover {
+  color: #fff;
+  background: none;
+}
+
+/* ========================section style=========================== */
+section .max-width{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2.5em;
+}
+section .max-width > * {
+  width: 100%;
+}
+section .max-width .title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle::before {
+  content: "";
+  width: 7%;
+  height: 5px;
+  border-bottom: 2px solid #000;
+}
+
+.subtitle::after {
+  content: "";
+  width: 7%;
+  height: 5px;
+  border-bottom: 2px solid #000;
+}
+
+/* =====================================================about style ======================================== */
+section {
+  padding: 50px 0px;
+}
+
+.about {
+  font-family: "poppins", sans-serif;
+}
+
+.about-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.about-content .cl-left {
+  width: 40%;
+}
+
+.about-content .cl-left img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-content .cl-right {
+  width: 55%;
+}
+
+.about .about-content .cl-right .heading {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.about .about-content .cl-right .heading span {
+  color: crimson;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about .about-content .cl-right .text {
+  font-size: 20px;
+  font-weight:500;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.about .about-content .cl-right a {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right:400px;
+  border: 2px solid crimson;
+  border-radius: 8px;
+  background-color: crimson;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 15px 35px;
+}
+
+.about .about-content .cl-right a:hover {
+  color: crimson;
+  background: none;
+  color: #000;
+}
+
+/* ==================services style========== */
+
+.services {
+  color: white;
+  background: black;
+}
+
+.services .max-width .subtitle::before {
+  background: white;
+}
+
+.services .max-width .subtitle::after {
+  content: "";
+  background: white;
+}
+
+.ser-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.ser-content {
+  margin: 100px;
+}
+
+.services .ser-content .card {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  padding: 20px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.services .ser-content .card:hover .box {
+  background: crimson;
+}
+
+.services .ser-content .card:hover {
+  background: crimson;
+}
+
+.services .ser-content .card i {
+  font-size: 50px;
+  color: crimson;
+}
+
+.services .ser-content .card:hover i {
+  color: #fff;
+}
+
+.services .ser-content .card .text {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px 0 7px 0;
+}
+
+.services .ser-content .card p {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* =====skills style ====== */
+
+.skills{
+  margin: 10px;
+  padding: 10px;
+}
+.skills-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.skills-content .cl-left {
+  width: 60%;
+}
+
+.skills-content .cl-left .text {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom:5px;
+  text-align: justify;
+}
+
+.skills-content .cl-left .text span{
+  color: crimson;
+}
+
+.skills .skills-content .cl-left p {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 500;
+  justify-content: space-between;
+}
+
+.skills .skills-content .cl-left a {
+  border: 2px solid crimson;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+  background-color: crimson;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin-right: 67%;
+}
+
+.skills .skills-content .cl-left a:hover {
+  background: none;
+  color:black;
+}
+
+.skills-content .cl-right {
+  width: 50%;
+  margin-left: 100px;
+}
+
+.skills .skills-content .cl-right .bars {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.skills .skills-content .cl-right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills .skills-content .cl-right .line {
+  height: 5px;
+  width: 100%;
+  background: lightgray;
+  position: relative;
+}
+
+.skills .skills-content .cl-right .line::before {
+  content: "";
+  height: 100%;
+  width: 80%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: crimson;
+}
+
+.skills .skills-content .cl-right .html::before {
+  width: 90%;
+}
+
+.skills .skills-content .cl-right .css::before {
+  width: 70%;
+}
+
+.skills .skills-content .cl-right .java::before {
+  width: 30%;
+}
+
+.skills .skills-content .cl-right .php::before {
+  width: 80%;
+}
+
+.skills .skills-content .cl-right .sql::before {
+  width: 60%;
+}
+
+/* =========team style========= */
+
+.teams {
+  color: white;
+}
+section.teams#teams{
+  background: #222;
+}
+
+.teams .max-width .subtitle::before {
+  background: white;
+}
+
+.teams .max-width .subtitle::after {
+  content: "";
+  background: white;
+}
+.wrapper_body_slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5em;
+  height: 60vh;
+}
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #484848;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child {
+  left: -22px;
+}
+.wrapper i:last-child {
+  right: -22px;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #333;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: crimson;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #333;
+}
+
+.carousel .card:hover{
+  background: crimson;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+  color: #fff;
+}
+.carousel .card p {
+  color: #cfd3db;
+  font-size: 1.31rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+/* =================================contect style==================== */
+.contact {
+  background: #fff;
+  margin-bottom:150px;
+}
+
+.contact-contant {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact .contact-contant .cl-left {
+  width: 40%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.contact .contact-contant .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.contact .contact-contant p {
+  text-align: justify;
+}
+
+.contact .contact-contant .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-contant .row .info {
+  margin-left: 30px;
+}
+
+.contact .contact-contant .row i {
+  color: crimson;
+  font-size: 25px;
+}
+
+.contact .contact-contant .row .head {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact .contact-contant .row .head {
+  text-align: justify;
+}
+
+.contact .contact-contant .row .sub-title {
+  color: #222;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.contact .contact-contant .cl-right {
+  width: 50%;
+  /* margin-left: 80px; */
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.contact .contact-contant .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact .right form .fields {
+  display: flex;
+}
+
+.contact .cl-right form .field,
+.contact .cl-right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact .cl-right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+
+.contact .cl-right form .fields .name {
+  float: left;
+  width: 40%;
+  margin-bottom: 20px;
+}
+
+.contact .cl-right form .fields .email {
+  float: right;
+  width: 55%;
+}
+
+.contact .cl-right form .fields::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.contact .cl-right form .field input,
+.contact .cl-right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 17px;
+  outline: none;
+  font-family: "poppins", sans-serif;
+}
+
+.contact .cl-right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.contact .cl-right form .button {
+  height: 47px;
+  width: 170px;
+}
+
+.contact .cl-right form .button button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid crimson;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact .cl-right form .button button:hover {
+  background: none;
+  color: crimson;
+}
+
+/* ============animation style==========
+section{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+section .animate
+{
+  transition:1s ease-in-out;
+}
+
+.sec-1 .animate{
+  transform:translateX(-150%);
+}
+
+.sec-1.show-animation .animate{
+  transform:translateX(0);
+}
+
+.sec-2 .animate{
+  transform:translateX(-200%);
+}
+
+.sec-2.show-animation .animate{
+  transform:translateX(0);
+}
+
+.sec-3 .animate{
+  transform:translateX(-350%);
+}
+
+.sec-3.show-animation .animate{
+  transform:translateX(0);
+}
+
+.sec-4 .animate{
+  transform:translateX(200%);
+}
+
+.sec-4.show-animation .animate{
+  transform:translateX(0);
+}
+
+.sec-5 .animate{
+  transform:translateX(200%);
+}
+
+.sec-5.show-animation .animate{
+  transform:translateX(0);
+}
+
+
+.sec-6 .animate{
+  transform:translateX(300%);
+}
+
+.sec-6.show-animation .animate{
+  transform:translateX(0);
+} */
+/* ============footer style========== */
+
+footer {
+height:80px;
+  background: #111;
+  text-align: center;
+  padding: 20px 23px;
+  color: #fff;
+  font-size: 20px;
+  align-items: center;
+}
+
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
